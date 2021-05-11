@@ -1,0 +1,28 @@
+2021-05-07 00:13:35,037-【test_login.py】-->line:39-INFO:用例---【登录成功】----执行通过
+2021-05-07 00:13:35,066-【test_login.py】-->line:39-INFO:用例---【登录失败】----执行通过
+2021-05-07 00:13:35,095-【test_register.py】-->line:34-ERROR:用例---【注册成功】---执行失败
+2021-05-07 00:13:35,095-【test_register.py】-->line:35-ERROR:{'code': 1, 'msg': '注册成功'} != {'code': 0, 'msg': '两次密码不一致'}
+- {'code': 1, 'msg': '注册成功'}
+?          ^          ^^^^
+
++ {'code': 0, 'msg': '两次密码不一致'}
+?          ^          ^^^^^^^
+Traceback (most recent call last):
+  File "D:\PythonPoject\project01\testcase\test_register.py", line 31, in test_register
+    self.assertEqual(expected, res)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 1211, in assertDictEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: {'code': 1, 'msg': '注册成功'} != {'code': 0, 'msg': '两次密码不一致'}
+- {'code': 1, 'msg': '注册成功'}
+?          ^          ^^^^
+
++ {'code': 0, 'msg': '两次密码不一致'}
+?          ^          ^^^^^^^
+
+2021-05-07 00:13:35,134-【test_register.py】-->line:39-ERROR:用例---【该账户已存在】---执行成功
+2021-05-07 00:13:35,165-【test_register.py】-->line:39-ERROR:用例---【两次密码不一致】---执行成功
+2021-05-07 00:13:35,203-【test_register.py】-->line:39-ERROR:用例---【密码长度不符合要求】---执行成功
